@@ -1,18 +1,23 @@
 <template>
     <div class="home">
-        <img alt="Vue logo" src="../assets/logo.png" />
-        <HelloWorld msg="Welcome to Your Vue.js App" />
+        <generic-map></generic-map>
     </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
+import GenericMap from "@/components/Map/GenericMap.vue";
 
 export default {
     name: "Home",
-    components: {
-        HelloWorld
-    }
+    components: { 
+        GenericMap 
+    },
 };
 </script>
+
+<style lang="scss" scoped>
+.home {
+    height: 100vh;
+    width: 100vw;
+}
+</style>
